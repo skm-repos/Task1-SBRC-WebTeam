@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+#nav-right{
+  flex: 1;
+  text-align: right;
+}
+#nav-menu{
+  flex: 1;
+  text-align: center;
+}
+
+#nav-nenu ul{
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 50%;
+}
+
+#nav-menu ul li{
+  display: inline-block;
+  margin-right: 30px;
+}
+
+#nav-menu a{
+  text-decoration: none;
+  color: #555
+}
+
+.container{
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
