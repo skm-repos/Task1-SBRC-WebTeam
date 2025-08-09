@@ -2,12 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Nova Square", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
-
+body{
+  background: #caf0f8;
+}
 .navbar{
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 5px 30px;
+  background: #003459;
+  color: white;
 }
 
 #nav-right{
@@ -27,12 +34,19 @@
 
 #nav-menu ul li{
   display: inline-block;
-  margin-right: 30px;
+  margin-left: 30px;
+  margin-right: 0;
+}
+#nav-menu ul li img{
+  height: 10px;
+  width: 15px;
+  padding: 0;
+  margin-left: 3px;
 }
 
 a{
   text-decoration: none;
-  color: #031d44;
+  color: #fff;
 }
 
 .nav-r{
@@ -44,9 +58,8 @@ a{
 
 #search-space{
   border-radius: 10px;
-  border-color: #001233;
-  color: #0a1128;
-  opacity: 30%;
+  border-color: #fff;
+  color:#0a1128;
   width: 300px;
   margin-right: 30px;
 }
@@ -54,23 +67,27 @@ a{
 .container{
   max-width: 1300px;
   margin: auto;
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 30px 25px 30px 25px;
 }
 
 #cart{
-  background: #136f63;
-  color: #fff;
-  border-radius: 5px;
-  border-width: 0.5px;
+  background: #147df5;
+  color: #000000;
+  border: none;
   padding: 5px 15px;
+  font-weight: bold;
+}
+
+#cart img{
+  height: 13px;
+  margin: 0;
+  padding-top: 0;
 }
 #profile{
-  background: #ffe45e;
-  color: black;
-  border-radius: 5px;
-  border-width: 0.5px;
+  background: #147df5;
+  border: none;
   padding: 5px 15px;
+  font-weight: bold;
 }
 
 .hero{
@@ -85,6 +102,7 @@ a{
   color: #001233;
   flex-basis: 40%;
   min-width: 300px;
+  padding-bottom: 35px;
 }
 
 .hero-img img{
@@ -105,8 +123,159 @@ a{
   padding: 8px 30px;
   margin: 30px 0;
   border-radius: 20px;
+  transition: background 0.5s;
+}
+.btn:hover{
+  background: #0a1128;
 }
 
 .header{
-  background: radial-gradient(#012a4a,#a9d6e5)
+  background: radial-gradient(#012a4a,#90cbdf)
+}
+
+.limited{
+  margin:70px 0;
+  max-width: 1080px;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.limited h2{
+  font-size: 40px;
+  line-height: 60px;
+  margin: 20px 0;
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+.limited hr{
+  border: 1px solid black; 
+  width: 100%; 
+  margin: 20px auto;
+}
+
+.lm-rows{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.lm-colm{
+  flex-basis: 30%;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+
+.lm-colm img{
+  max-width: 100%;
+}
+
+.products{
+  margin:70px 0;
+  max-width: 1080px;
+  margin: auto;
+  padding: 30px 0;
+}
+.products h2{
+  font-size: 40px;
+  line-height: 60px;
+  margin: 20px 0;
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+.products h3{
+  font-size: 30px;
+  line-height: 60px;
+  margin: 20px 0;
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+.p-rows{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.p-colm{
+  flex-basis: 20%;
+  min-width: 250px;
+  margin-bottom: 30px;
+  padding: 30px 30px;
+}
+
+.p-colm img{
+  margin: auto;
+  max-width: 100%;
+}
+
+.Discription{
+  margin: 10px 0;
+}
+.Discription h3{
+  font-size: 25px;
+  color: #b100e8;
+  padding: 5px 0;
+}
+.Discription h4{
+  padding: 1px 0;
+  color:#000000;
+}
+
+.footer {
+    background-color: #003459;
+    color: white;
+    padding: 5px 20px 20px;
+    margin-top: 50px;
+}
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+}
+.footer-container div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+.footer h3 {
+    border-bottom: 2px solid #147df5;
+    padding-bottom: 8px;
+    margin-bottom: 10px;
+}
+.footer a {
+    color: #90e0ef;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+.footer-cc {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #888;
+}
+.discounted-price {
+    color: #053063;
+    font-weight: bold;
+    margin-left: 8px;
+}
+.discount {
+    background: #ff4040;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 6px;
 }
